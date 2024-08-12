@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    background-image: url("./restpik.png");
+      background-size: cover;
+      background-attachment: fixed;
+  }
+  
+  /* ---------- Navbar1 ------------ */
+ 
+  .navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px 0 60px;
+    margin-top: 55px;
+  }
+  
+  .list {
+    display: flex;
+    align-items: center;
+    gap: 62px;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffc234;
+  }
+  
+  .logo,
+  .list-item {
+    cursor: pointer;
+  }
+  
+  .button-small {
+    padding: 12px 40px;
+    background-color: #ff5a68;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 30px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  /* ---------- HERO ------------ */
+  
+ 
+  .herosec {
+    max-width: 1154px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 119px;
+  }
+
+  .herosec-heading {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+    color: #ffd900;
+    line-height: 114px;
+  }
+  
+  .button-large {
+    background: #ff505f;
+    font-family: "Red Rose";
+    font-style: normal;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 32px;
+    border: none;
+    color: #ffffff;
+    padding: 24px 56px;
+    margin-top: 64px;
+    cursor: pointer;
+  }
+  
+  .bottom {
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+  }
+  
