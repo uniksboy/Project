@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  /* ---------- NAVBAR ------------ */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 31px 83px;
+    height: 94px;
+    background-color: #000;
+  }
+  
+  .grow-list {
+    flex-grow: 1;
+  }
+  
+  img {
+    width: 92px;
+    height: 32px;
+  }
+  
+  .line {
+    width: 1px;
+    height: 50px;
+    background-color: #fff;
+    margin-left: 65px;
+  }
+  
+  .list {
+    display: flex;
+    align-items: center;
+    gap: 63px;
+    list-style: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: #ffffff;
+    margin-left: 70px;
+  }
+  
+  .logo,
+  .list-item {
+    cursor: pointer;
+  }
+  
+  .button-small {
+    padding: 7px 28px;
+    background: #c00ccd;
+    border-radius: 8px;
+    border: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  /* ---------- HERO SEC------------ */
+  
+  .herosec {
+    background-image: url("bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 92vh;
+    text-align: center;
+  }
+  
+  .herosec-heading {
+    max-width: 848px;
+    margin: 0 auto;
+    font-style: normal;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 98px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 172px;
+  }
+  
+  .herosec-description {
+    font-family: "Poppins";
+    font-style: normal;
+    font-size: 28px;
+    line-height: 46px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  
+  .button-large {
+    background: #ba0cc5;
+    font-family: "Poppins";
+    border-radius: 12px;
+    font-style: normal;
+    line-height: 45px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 64px;
+    cursor: pointer;
+  }
+  
