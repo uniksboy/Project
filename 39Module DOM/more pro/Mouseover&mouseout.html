@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover and Mouseout Events</title>
+    <style>
+        #hoverBox {
+            width: 150px;
+            height: 150px;
+            background-color: #e74c3c;
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div id="hoverBox"></div>
+    <script>
+        const hoverBox = document.getElementById('hoverBox');
+        hoverBox.addEventListener('mouseover', () => {
+            hoverBox.style.backgroundColor = '#f39c12';
+        });
+        hoverBox.addEventListener('mouseout', () => {
+            hoverBox.style.backgroundColor = '#e74c3c';
+        });
+    </script>
+</body>
+</html>

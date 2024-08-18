@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick Event</title>
+    <style>
+        #colorBox {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="colorBox"></div>
+    <script>
+        const colorBox = document.getElementById('colorBox');
+        colorBox.addEventListener('click', () => {
+            colorBox.style.backgroundColor = `rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})`;
+        });
+    </script>
+</body>
+</html>
+
+

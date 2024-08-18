@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keypress Event</title>
+</head>
+<body>
+    <input type="text" id="textInput" placeholder="Type here...">
+    <p id="keyCount">Key Pressed: 0</p>
+    <script>
+        const textInput = document.getElementById('textInput');
+        const keyCount = document.getElementById('keyCount');
+        let count = 0;
+
+        textInput.addEventListener('keypress', () => {
+            count += 1;
+            keyCount.textContent = `Key Pressed: ${count}`;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keydown and Keyup Events</title>
+</head>
+<body>
+    <p id="status">Press and release a key.</p>
+    <script>
+        const status = document.getElementById('status');
+
+        document.addEventListener('keydown', (event) => {
+            status.textContent = `Key Down: ${event.key}`;
+        });
+
+        document.addEventListener('keyup', (event) => {
+            status.textContent = `Key Up: ${event.key}`;
+        });
+    </script>
+</body>
+</html>
