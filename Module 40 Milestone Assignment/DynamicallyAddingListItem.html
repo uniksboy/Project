@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic List</title>
+</head>
+<body>
+    <section>
+        <h2>What you'll learn</h2>
+        <ol id="learningList"></ol>
+        <button id="addItemButton">Add Item</button>
+        <p id="message"></p>
+    </section>
+
+    <script>
+        const items = [
+            "JavaScript Basics",
+            "DOM Manipulation",
+            "Event Handling",
+            "AJAX and Fetch API",
+            "ES6 Features",
+            "Asynchronous Programming"
+        ];
+        let currentIndex = 0;
+
+        document.getElementById("addItemButton").addEventListener("click", function() {
+            const list = document.getElementById("learningList");
+            const message = document.getElementById("message");
+
+            if (currentIndex < items.length) {
+                const newItem = document.createElement("li");
+                newItem.textContent = items[currentIndex];
+                list.appendChild(newItem);
+                currentIndex++;
+            } else {
+                message.textContent = "All items have been added.";
+            }
+        });
+    </script>
+</body>
+</html>

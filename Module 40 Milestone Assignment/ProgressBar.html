@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <style>
+        body {
+            height: 2000px; /* For demonstration purposes */
+        }
+        #progressBar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 5px;
+            background-color: green;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div id="progressBar"></div>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+            const clientHeight = document.documentElement.clientHeight || window.innerHeight;
+            const scrolledPercentage = (scrollTop / (scrollHeight - clientHeight)) * 100;
+            document.getElementById("progressBar").style.width = scrolledPercentage + "%";
+        });
+    </script>
+</body>
+</html>
+

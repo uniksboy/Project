@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click Text Change</title>
+</head>
+<body>
+    <h1 id="heading">The most affordable learning platform</h1>
+    <button id="toggleButton">Toggle Text</button>
+
+    <script>
+        const heading = document.getElementById("heading");
+        const button = document.getElementById("toggleButton");
+
+        button.addEventListener("click", () => {
+            heading.textContent === "The most affordable learning platform" ?
+                heading.textContent = "PW Skills" :
+                heading.textContent = "The most affordable learning platform";
+        });
+    </script>
+</body>
+</html>
+
